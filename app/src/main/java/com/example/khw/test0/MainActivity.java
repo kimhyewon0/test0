@@ -19,7 +19,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         button = (Button) findViewById(R.id.button);
-
         button.setOnClickListener(gildong);
 
     }
@@ -27,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View view) {
             Toast.makeText(getApplicationContext(), "button Clicked", Toast.LENGTH_SHORT).show();
-            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:119"));
+            Intent myIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("tel:114"));
             startActivity(myIntent);
         }
     };
